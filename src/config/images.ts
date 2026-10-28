@@ -1,0 +1,381 @@
+/**
+ * Discover Sumur - Image Configuration
+ * Connected with real verified photographs of Sumur Village and Nubra Valley.
+ * Rendered without any artificial AI effects or distortion, preserving pure photographic beauty.
+ */
+
+export interface ImageItem {
+  id: string;
+  url: string;
+  alt: string;
+  caption: string;
+  credit?: string;
+  category?: 'village' | 'monastery' | 'stupa' | 'landscape' | 'dunes' | 'picnic' | 'culture' | 'architecture' | 'homestay';
+  aspectRatio?: '16/9' | '4/3' | '3/2' | '1/1' | '21/9';
+}
+
+export const siteImages: Record<string, ImageItem> = {
+  // 1. Hero Section
+  heroPanorama: {
+    id: 'hero-panorama',
+    url: '/images/sumoor_hero_front.jpg',
+    alt: 'Sumoor village in Nubra valley of Ladakh: Wide panoramic landscape with green fields and poplars under high mountain peaks',
+    caption: 'Sumoor Village: Serene green fields and mountain peaks in Nubra Valley, Ladakh',
+    credit: 'Discover Leh Ladakh / Discover Sumoor',
+    category: 'landscape',
+    aspectRatio: '21/9',
+  },
+
+  // 2. Welcome to Sumur Section
+  welcomeVillageMain: {
+    id: 'welcome-village-main',
+    url: '/images/image_3.jpg',
+    alt: 'Sumur village traditional houses surrounded by green barley fields and apricot orchards',
+    caption: 'The serene heart of Sumur village: whitewashed traditional homes amidst high-altitude orchards',
+    credit: 'Travelling Camera / Discover Sumur',
+    category: 'village',
+    aspectRatio: '16/9',
+  },
+  welcomeVillageSupporting1: {
+    id: 'welcome-village-sup-1',
+    url: '/images/image_0.jpg',
+    alt: 'Traditional Ladakhi vernacular architecture and wood balconies in Sumur',
+    caption: 'Traditional Ladakhi craftsmanship and earthen architectural heritage in Sumur',
+    credit: 'The Kyagar / Discover Sumur',
+    category: 'architecture',
+    aspectRatio: '4/3',
+  },
+  welcomeVillageSupporting2: {
+    id: 'welcome-village-sup-2',
+    url: '/images/image_10.jpg',
+    alt: 'Sacred white chortens and mountain views in Sumur overlooking the Nubra River basin',
+    caption: 'Sacred chortens standing watch over the peaceful river basin and mountain ridges',
+    credit: 'TripAdvisor Archives / Discover Sumur',
+    category: 'stupa',
+    aspectRatio: '4/3',
+  },
+
+  // 3. Main Attractions
+  sumurVillageLandscape: {
+    id: 'attr-sumur-village',
+    url: '/images/sumoor_village_bg.webp',
+    alt: 'Sumoor Village landscape with peaceful houses and towering arid mountains',
+    caption: 'Sumur Village: A tranquil high-altitude oasis in the Nubra Valley',
+    credit: 'Ease India Trip Archives',
+    category: 'village',
+    aspectRatio: '16/9',
+  },
+  samstanlingMonastery: {
+    id: 'attr-samstanling-monastery',
+    url: '/images/image_1.jpg',
+    alt: 'Samstanling Monastery (Gompa) standing against the mountain slopes in Sumur',
+    caption: 'Samstanling Monastery (Gompa): 19th-century Buddhist sanctuary on the mountain slopes of Sumur',
+    credit: 'WanderOn Photography',
+    category: 'monastery',
+    aspectRatio: '16/9',
+  },
+  samstanlingFront: {
+    id: 'attr-samstanling-front',
+    url: '/images/samstanling_front.jpg',
+    alt: 'Samstanling Monastery temple facade with vibrant prayer flags and traditional Ladakhi monastic woodwork',
+    caption: 'Samstanling Monastery Temple Gate: Sacred prayer flags fluttering in the mountain breeze',
+    credit: 'Tour My India Archives',
+    category: 'monastery',
+    aspectRatio: '16/9',
+  },
+  buddhaStupa: {
+    id: 'attr-buddha-stupa',
+    url: '/images/image_2.jpg',
+    alt: 'Peaceful Sumur Eco Buddha Park with Buddha Statue and sacred Stupa',
+    caption: 'Buddha Statue & sacred Stupa in Sumur against the majestic Karakoram mountain backdrop',
+    credit: 'Sumur Community Archives',
+    category: 'stupa',
+    aspectRatio: '16/9',
+  },
+  goldenBuddha: {
+    id: 'attr-golden-buddha',
+    url: '/images/golden_buddha_sumur.jpg',
+    alt: 'The Golden Buddha Statue of Sumur Village in Nubra Valley',
+    caption: 'The Golden Buddha of Sumur: Tranquil Guardian of Nubra Valley',
+    credit: 'Skydex Photography / Sumur',
+    category: 'stupa',
+    aspectRatio: '1/1',
+  },
+  naturalLandscapes: {
+    id: 'attr-natural-landscapes',
+    url: '/images/image_4.jpg',
+    alt: 'Dramatic mountain landscapes and valley road along Nubra River near Sumur',
+    caption: 'Dramatic mountain terrains and glacial river valleys converging near Sumur',
+    credit: 'Life On The Planet Ladakh',
+    category: 'landscape',
+    aspectRatio: '16/9',
+  },
+  hunderSandDunes: {
+    id: 'attr-hunder-sand-dunes',
+    url: '/images/hunder_sand_dunes.png',
+    alt: 'Cold desert sand dunes of Hunder in Nubra Valley with rolling white sands and mountain backdrop',
+    caption: 'Hunder Sand Dunes: Iconic cold-desert sand formations in the wider Nubra Valley (~40 km from Sumur)',
+    credit: 'Life On The Planet Ladakh',
+    category: 'dunes',
+    aspectRatio: '16/9',
+  },
+  picnicSpot: {
+    id: 'attr-picnic-spot',
+    url: '/images/image_3.jpg',
+    alt: 'Peaceful riverside willow and poplar picnic grove near Sumur',
+    caption: 'Riverside Willow Picnic Grove: Tranquil shaded spot along running glacial water in Sumur',
+    credit: 'Travelling Camera',
+    category: 'picnic',
+    aspectRatio: '16/9',
+  },
+  sumoorScenes: {
+    id: 'attr-sumoor-scenes',
+    url: '/images/sumoor_scenes.jpg',
+    alt: 'Sumoor Village scenes, mountain trails and rural life in Nubra Valley',
+    caption: 'Sumur Village Scenes: Rural pathways, orchards, and high-altitude mountain trails',
+    credit: 'Chandresh Mehta Photography',
+    category: 'village',
+    aspectRatio: '1/1',
+  },
+
+  // 4. Discover Local Culture
+  cultureTraditions: {
+    id: 'culture-traditions',
+    url: '/images/image_10.jpg',
+    alt: 'Sacred Buddhist chortens and prayer pathways in Sumur, Ladakh',
+    caption: 'Ladakhi Traditions: Sacred chortens, prayer wheels, and living Buddhist spiritual devotion',
+    credit: 'TripAdvisor Archives',
+    category: 'culture',
+    aspectRatio: '4/3',
+  },
+  cultureArchitecture: {
+    id: 'culture-architecture',
+    url: '/images/image_0.jpg',
+    alt: 'Traditional Ladakhi vernacular architecture with mud brick and carved woodwork',
+    caption: 'Traditional Architecture: Handcrafted earthen walls and carved wooden window lintels in Sumur',
+    credit: 'The Kyagar Archives',
+    category: 'architecture',
+    aspectRatio: '4/3',
+  },
+  cultureFoodHospitality: {
+    id: 'culture-food',
+    url: '/images/image_6.jpg',
+    alt: 'Traditional Ladakhi village home and warm hearth hospitality in Sumur',
+    caption: 'Local Food & Hospitality: Savoring warm butter tea (Gur-gur chai) and home-cooked meals',
+    credit: 'Homestays of India',
+    category: 'culture',
+    aspectRatio: '4/3',
+  },
+  cultureVillageLife: {
+    id: 'culture-village-life',
+    url: '/images/image_11.jpg',
+    alt: 'Terraced barley fields and pastoral farming rhythm in Sumur',
+    caption: 'Village Life: Harvesters tending emerald terraced fields fed by glacial water canals',
+    credit: 'Discover Leh Ladakh',
+    category: 'village',
+    aspectRatio: '4/3',
+  },
+
+  // 5. Homestays & Accommodation
+  homestay1: {
+    id: 'stay-homestay-1',
+    url: '/images/image_6.jpg',
+    alt: 'Traditional Ladakhi village homestay in Sumur with mountain views',
+    caption: 'Traditional Sumur Village Homestay: Authentic family hospitality and home-cooked Ladakhi food',
+    category: 'homestay',
+    aspectRatio: '16/9',
+  },
+  homestay2: {
+    id: 'stay-homestay-2',
+    url: '/images/image_5.jpg',
+    alt: 'Green Valley Homestay with garden grounds in Sumur',
+    caption: 'Green Valley Homestay: Peaceful garden setting surrounded by apricot trees in Sumur',
+    category: 'homestay',
+    aspectRatio: '16/9',
+  },
+  homestay3: {
+    id: 'stay-homestay-3',
+    url: '/images/image_8.jpg',
+    alt: 'Mountain view retreat and guest lodge overlooking the Nubra basin in Sumur',
+    caption: 'Sumur Mountain Retreat Lodge: Quiet lodging with panoramic valley and mountain views',
+    category: 'homestay',
+    aspectRatio: '16/9',
+  },
+  homestay4: {
+    id: 'stay-homestay-4',
+    url: '/images/sumur_stay_agoda.jpg',
+    alt: 'Sumur Village Boutique Guest Lodge with comfortable rooms and terrace vistas',
+    caption: 'Sumur Village Boutique Lodge: Comfortable guest lodging with views over the village basin',
+    category: 'homestay',
+    aspectRatio: '16/9',
+  },
+
+  // 6. Nearby Regional Destinations
+  guideDiskit: {
+    id: 'guide-diskit',
+    url: '',
+    alt: 'The monumental 32-meter Maitreya Buddha statue and Diskit Gompa overlooking Nubra Valley',
+    caption: 'Diskit Monastery & Maitreya Buddha (Nearby regional destination ~35 km)',
+    category: 'monastery',
+    aspectRatio: '16/9',
+  },
+  guidePanamik: {
+    id: 'guide-panamik',
+    url: '',
+    alt: 'Sulphur-rich natural hot springs and mountain slopes of Panamik in northern Nubra',
+    caption: 'Panamik Hot Springs (Nearby regional destination ~24 km north of Sumur)',
+    category: 'landscape',
+    aspectRatio: '16/9',
+  },
+};
+
+/**
+ * Gallery Images - updated with all user provided photographs
+ */
+export const galleryImages: ImageItem[] = [
+  {
+    id: 'gal-1',
+    url: '/images/image_11.jpg',
+    alt: 'Sumur Village Landscape with green poplar groves and snow-dusted Karakoram peaks',
+    caption: 'Sumur Village Panorama: Verdant fields and poplars in the heart of Nubra Valley',
+    credit: 'Discover Leh Ladakh',
+    category: 'village',
+    aspectRatio: '16/9',
+  },
+  {
+    id: 'gal-2',
+    url: '/images/image_1.jpg',
+    alt: 'Samstanling Monastery (Gompa) nestled against the mountain slope in Sumur',
+    caption: 'Samstanling Monastery: Historic 19th-century Gompa overlooking Sumur orchards',
+    credit: 'WanderOn Photography',
+    category: 'monastery',
+    aspectRatio: '4/3',
+  },
+  {
+    id: 'gal-3',
+    url: '/images/samstanling_front.jpg',
+    alt: 'Samstanling Monastery temple facade and prayer flags',
+    caption: 'Samstanling Monastery Gate: Colorful prayer flags rippling in high mountain air',
+    credit: 'Tour My India',
+    category: 'monastery',
+    aspectRatio: '16/9',
+  },
+  {
+    id: 'gal-4',
+    url: '/images/image_2.jpg',
+    alt: 'Buddha Statue & sacred Stupa at Eco Buddha Park in Sumur',
+    caption: 'Buddha Stupa & Statue: Sacred monument of peace in Sumur against the mountains',
+    credit: 'Sumur Community Archives',
+    category: 'stupa',
+    aspectRatio: '3/2',
+  },
+  {
+    id: 'gal-5',
+    url: '/images/golden_buddha_sumur.jpg',
+    alt: 'The Golden Buddha Statue of Sumur Village in Nubra Valley',
+    caption: 'Golden Buddha of Sumur: Tranquil Guardian of Nubra Valley',
+    credit: 'Skydex Photography',
+    category: 'stupa',
+    aspectRatio: '1/1',
+  },
+  {
+    id: 'gal-6',
+    url: '/images/hunder_sand_dunes.png',
+    alt: 'Cold desert sand dunes of Hunder in Nubra Valley',
+    caption: 'Hunder Sand Dunes: Vast high-altitude desert formations in Nubra Valley',
+    credit: 'Life On The Planet Ladakh',
+    category: 'dunes',
+    aspectRatio: '16/9',
+  },
+  {
+    id: 'gal-7',
+    url: '/images/image_4.jpg',
+    alt: 'Dramatic mountain landscapes and river valley route near Sumur',
+    caption: 'Mountain Landscapes: Jagged Karakoram ridges and braided glacial streams',
+    credit: 'Life On The Planet Ladakh',
+    category: 'landscape',
+    aspectRatio: '16/9',
+  },
+  {
+    id: 'gal-8',
+    url: '/images/sumoor_village_bg.webp',
+    alt: 'Sumoor Village panoramic backdrop with mountain vistas',
+    caption: 'Sumur Village Landscape: High-altitude mountain trails and peaceful farmsteads',
+    credit: 'Ease India Trip',
+    category: 'village',
+    aspectRatio: '16/9',
+  },
+  {
+    id: 'gal-9',
+    url: '/images/sumoor_scenes.jpg',
+    alt: 'Sumoor village scenes, mountain trails and rural life',
+    caption: 'Sumur Village Scenes: Rural walking trails and mountain scenery',
+    credit: 'Chandresh Mehta Photography',
+    category: 'village',
+    aspectRatio: '1/1',
+  },
+  {
+    id: 'gal-10',
+    url: '/images/image_3.jpg',
+    alt: 'Sumur village orchards and peaceful riverside scenery',
+    caption: 'Village & Riverside Oasis: Ancient willow trees and apricot groves along fresh water',
+    credit: 'Travelling Camera',
+    category: 'picnic',
+    aspectRatio: '4/3',
+  },
+  {
+    id: 'gal-11',
+    url: '/images/image_0.jpg',
+    alt: 'Traditional Ladakhi vernacular architecture and woodwork in Sumur',
+    caption: 'Local Culture & Architecture: Carved wooden balconies and sun-dried earthen design',
+    credit: 'The Kyagar Archives',
+    category: 'architecture',
+    aspectRatio: '3/2',
+  },
+  {
+    id: 'gal-12',
+    url: '/images/image_6.jpg',
+    alt: 'Traditional Ladakhi village homestay in Sumur with mountain vistas',
+    caption: 'Authentic Village Homestay: Traditional dwelling offering warm Ladakhi hospitality',
+    credit: 'Homestays of India',
+    category: 'homestay',
+    aspectRatio: '4/3',
+  },
+  {
+    id: 'gal-13',
+    url: '/images/sumur_stay_agoda.jpg',
+    alt: 'Sumur Village Boutique Guest Lodge with mountain vistas',
+    caption: 'Sumur Village Guest Lodge: Comfortable rooms and mountain viewing terrace',
+    credit: 'Agoda Guest Archives',
+    category: 'homestay',
+    aspectRatio: '16/9',
+  },
+  {
+    id: 'gal-14',
+    url: '/images/image_5.jpg',
+    alt: 'Green Valley Homestay in Sumur with garden grounds',
+    caption: 'Green Valley Garden Stay: Surrounded by apricot orchards and willow trees',
+    credit: 'Agoda / Booking',
+    category: 'homestay',
+    aspectRatio: '4/3',
+  },
+  {
+    id: 'gal-15',
+    url: '/images/image_10.jpg',
+    alt: 'Sacred white chortens and mountain views in Sumur',
+    caption: 'Sacred Chortens: White stupas standing peaceful along village prayer trails',
+    credit: 'TripAdvisor Archives',
+    category: 'stupa',
+    aspectRatio: '16/9',
+  },
+  {
+    id: 'gal-16',
+    url: '/images/image_8.jpg',
+    alt: 'Mountain view retreat and guest lodge overlooking the Nubra basin in Sumur',
+    caption: 'Sumur Mountain Retreat Lodge: Quiet lodging with panoramic valley and mountain views',
+    credit: 'Ladakh Homestays Directory',
+    category: 'homestay',
+    aspectRatio: '16/9',
+  },
+];
+

@@ -1,0 +1,6 @@
+{
+  "name": "Discover Sumur",
+  "description": "Discover Sumur in Nubra Valley, Ladakh. Explore Samstanling Monastery, Buddhist heritage, local culture, natural landscapes, nearby attractions, and travel information.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

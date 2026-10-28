@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Cinzel', serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --color-gold-300: #f3dfa2;
+  --color-gold-400: #e5c158;
+  --color-gold-500: #d4af37;
+  --color-pine-900: #0f1f1a;
+  --color-obsidian-950: #090c0e;
+  --color-obsidian-900: #0f1418;
+  --color-obsidian-850: #141c22;
+  --color-obsidian-800: #1a232b;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #090c0e;
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+/* Custom mountain silhouette aesthetic */
+.mountain-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 65%),
+              linear-gradient(180deg, #090c0e 0%, #0d1216 50%, #090c0e 100%);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.15);
+}
+
+.gold-border {
+  border-color: rgba(212, 175, 55, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090c0e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
