@@ -18,12 +18,12 @@ export const siteImages: Record<string, ImageItem> = {
   // 1. Hero Section
   heroPanorama: {
     id: 'hero-panorama',
-    url: '/images/sumoor_hero_front.jpg',
-    alt: 'Sumoor village in Nubra valley of Ladakh: Wide panoramic landscape with green fields and poplars under high mountain peaks',
-    caption: 'Sumoor Village: Serene green fields and mountain peaks in Nubra Valley, Ladakh',
-    credit: 'Discover Leh Ladakh / Discover Sumoor',
+    url: '/images/sumoor_hero_landscape.jpg',
+    alt: 'Sumoor Village, Nubra Valley, Leh, Ladakh: Spectacular landscape of mountain slopes, deep blue sky, wetlands, and water reflections',
+    caption: 'Sumoor Village, Nubra valley, Leh, Ladakh, India',
+    credit: 'Ladakh Heritage & Landscape Archives',
     category: 'landscape',
-    aspectRatio: '21/9',
+    aspectRatio: '3/2',
   },
 
   // 2. Welcome to Sumur Section
@@ -233,6 +233,15 @@ export const siteImages: Record<string, ImageItem> = {
  * Gallery Images - updated with all user provided photographs
  */
 export const galleryImages: ImageItem[] = [
+  {
+    id: 'gal-sumoor-hero',
+    url: '/images/sumoor_hero_landscape.jpg',
+    alt: 'Sumoor Village, Nubra Valley, Leh, Ladakh: Spectacular landscape of mountain slopes, deep blue sky, wetlands, and water reflections',
+    caption: 'Sumoor Village, Nubra valley, Leh, Ladakh, India: High-altitude mountain ridges and crystal reflections',
+    credit: 'Ladakh Heritage & Landscape Archives',
+    category: 'landscape',
+    aspectRatio: '3/2',
+  },
   {
     id: 'gal-1',
     url: '/images/image_11.jpg',

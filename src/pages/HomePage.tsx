@@ -32,7 +32,8 @@ import {
   Mail,
   Phone,
   Send,
-  Shield
+  Shield,
+  Maximize2
 } from 'lucide-react';
 import { siteConfig } from '../config/siteConfig';
 import { siteImages, galleryImages } from '../config/images';
@@ -65,19 +66,19 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* 1. HERO SECTION WITH BACKGROUND IMAGE & OVERLAID CONTENT */}
       <section
         id="hero"
-        className="relative min-h-[85vh] sm:min-h-[88vh] lg:min-h-[92vh] flex items-center justify-start overflow-hidden bg-[#090c0e]"
+        className="relative min-h-[92vh] sm:min-h-screen flex items-center justify-start overflow-hidden bg-[#090c0e]"
         style={{
-          backgroundImage: `url('/images/sumoor_hero_front.jpg'), url('https://discoverlehladakh.in/wp-content/uploads/2025/08/Sumur-village-in-Nubra-valley-of-Ladakh.jpg')`,
+          backgroundImage: `url('/images/sumoor_hero_landscape.jpg'), url('/images/sumoor_hero_front.jpg')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center 35%',
+          backgroundPosition: 'center 42%',
           backgroundRepeat: 'no-repeat',
         }}
       >
-        {/* Soft, minimal gradient overlay so the real photograph of Sumoor is bright and clearly visible while ensuring text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/25 to-transparent pointer-events-none" />
+        {/* Soft, minimal gradient overlay so the real photograph of Sumoor is bright, vibrant and clearly visible while ensuring text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#090c0e]/80 via-transparent to-black/15 pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-28 relative z-10 w-full flex flex-col justify-between min-h-[85vh] sm:min-h-[88vh] lg:min-h-[92vh]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-28 relative z-10 w-full flex flex-col justify-between min-h-[92vh] sm:min-h-screen">
           {/* Main Hero Text (Positioned Towards the Left on Desktop) */}
           <div className="max-w-3xl space-y-6 pt-10 sm:pt-14 text-left">
             {/* Small Kicker Heading */}
@@ -96,7 +97,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               Explore the peaceful landscapes, Buddhist heritage, local culture, and natural beauty of Sumoor, Nubra Valley, Ladakh.
             </p>
 
-            {/* Two Action Buttons */}
+            {/* Action Buttons */}
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <button
                 onClick={() => scrollToSection('explore')}
@@ -112,6 +113,15 @@ export const HomePage: React.FC<HomePageProps> = ({
               >
                 <span>Plan Your Visit</span>
                 <Compass className="w-4 h-4 text-[#d4af37]" />
+              </button>
+
+              <button
+                onClick={() => onOpenLightbox('heroPanorama')}
+                className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-black/55 hover:bg-black/80 text-white border border-white/25 hover:border-[#d4af37] backdrop-blur-md font-bold text-xs uppercase tracking-widest transition-all duration-200 cursor-pointer shadow-md"
+                title="View Full Size Image in high resolution"
+              >
+                <Maximize2 className="w-4 h-4 text-[#d4af37]" />
+                <span>Full Size Image</span>
               </button>
             </div>
           </div>
